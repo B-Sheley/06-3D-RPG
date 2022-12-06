@@ -8,7 +8,7 @@ var end = false
 
 func _physics_process(_delta):
 	if targets_gone == true:
-		reset()
+		targets_gone = false
 		var _scene = get_tree().change_scene("res://UI/End_Screen.tscn")
 
 func _ready():
